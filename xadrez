@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    // Torre: Move-se em linha reta horizontalmente ou verticalmente
+    printf("Movimento da Torre:\n");
+    int casas_torre = 5;
+    for (int i = 0; i < casas_torre; i++) {
+        printf("Direita\n");
+    }
+
+    // Bispo: Move-se na diagonal
+    printf("\nMovimento do Bispo:\n");
+    int casas_bispo = 5;
+    int i = 0;
+    while (i < casas_bispo) {
+        printf("Cima, Direita\n");
+        i++;
+    }
+
+    // Rainha: Move-se em todas as direções
+    printf("\nMovimento da Rainha:\n");
+    int casas_rainha = 8;
+    int j = 0;
+    do {
+        printf("Esquerda\n");
+        j++;
+    } while (j < casas_rainha);
+
+    return 0;
+}
